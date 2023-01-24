@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- parte das configurações(html) -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <style>
+        /* tag style abre o css */ 
+
+        body{
+            /* inclui as modificações nas chaves no que esta antes, no caso o body*/
+
+            background-color: rgba(174, 0, 255, 0.918); /* muda a cor do fundo */
+            color: white; /* muda cor */
+            font: normal 25pt arial; /* muda fonte*/
+        }
+
+        h1{
+            
+            color: rgb(251, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <!-- parte do que aparece, conteudo(html) -->
+    <h1>Olá, Mundo!</h1> <!-- tag <h1> cria um titulo nivel 1-->
+    <p>Me livrei da maldição :)</p> <!-- Tag <p> cria um paragrafo-->
+    
+    <script>
+        // tag script abre o javascript
+
+       
+    var nome =  window.prompt('Qual seu nome?') // mostra uma mensagem e pode digitar algo
+    window.alert(`Prazer em te conhecer ${nome}!`) // template string in JS -> ``
+    </script>
+</body>
+</html>
