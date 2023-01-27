@@ -9,6 +9,14 @@ header{
 
 }
 
+#boxend{
+    margin-left: 14px;
+}
+
+#boxjump{
+    margin-left: 9px;
+}
+
 section{
     background: white;
     border-radius: 10px;
