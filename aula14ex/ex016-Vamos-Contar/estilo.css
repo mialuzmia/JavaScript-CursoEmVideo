@@ -17,6 +17,9 @@ header{
     margin-left: 9px;
 }
 
+div{
+    text-align: center;
+}
 section{
     background: white;
     border-radius: 10px;
