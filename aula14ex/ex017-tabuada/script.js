@@ -17,7 +17,7 @@ function tabuada(){
            item.value = `tab${cont} `
            tabuada.appendChild(item)
         }
-        
+         
     }
     
 }
