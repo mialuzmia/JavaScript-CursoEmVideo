@@ -12,17 +12,26 @@ function adcionar(){
     let boxnum = document.getElementById('boxnum')
     let num = Number(boxnum.value)
     let caixa = document.getElementById('selnum')
-    
-    if(num > 100 || lista.includes(num) == true || boxnum.value.length == 0){
+        
+    if(num > 100 || lista.includes(num) == true || boxnum.value.length == 0 || num < 1){
         alert('Valor inválido ou já encontrado na lista')
     }
     else{
+        //cria um option e adciona no select
         let item = document.createElement('option')
         item.text = `Valor ${num} adicionado.`
         caixa.appendChild(item)
+        //adciona o valor na array
         lista.push(num)
+        //dps que adcionar o valor limpar o res
+        res.innerHTML = ''
+        
 
     }
+
+    // apagar o valor do input dps de adcionar e colocar o cursor  nele dnv
+    boxnum.value = ''
+    boxnum.focus()  
     
 }
 
@@ -51,11 +60,12 @@ function finalizar(){
      
     }
     else{
+        res.innerHTML = ''
         res.innerHTML += `Ao todo temos ${total} números cadastrados.<br><br>`
         res.innerHTML += `O maior valor informado foi ${maior}.<br><br>`
-        res.innerHTML += `O menor valor informado foi ${menor}<br><br>`
-        res.innerHTML += `Somando todos os valores, temos ${soma}<br><br>`
-        res.innerHTML +=`A média dos valores digitados é ${media}`
+        res.innerHTML += `O menor valor informado foi ${menor}.<br><br>`
+        res.innerHTML += `Somando todos os valores, temos ${soma}.<br><br>`
+        res.innerHTML +=`A média dos valores digitados é ${media}.`
     }
 
    
